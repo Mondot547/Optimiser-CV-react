@@ -1,12 +1,12 @@
 import Project from '../components/Projects';
 import projectsData from '../data/projectsData';
 import { Container, Row, Col } from 'react-bootstrap';
-import '../assets/styles/Realisation.css'
+import '../assets/styles/Realisation.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 
-function Realisation() {
+const Realisation = () => {
     return (
         <>
             <Header />

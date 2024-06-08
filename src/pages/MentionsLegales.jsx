@@ -5,22 +5,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faLocationDot, faMobileScreenButton, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 //fonction que me permet de changer le text du header selectioné en text-primary via l'eventKey
-function MentionsLegales() {
+const MentionsLegales = () => {
 
     return (
         <>
             <Header />
             <Container className='text-center mt-5'>
-                            <h1 className='text-uppercase'>Mentions Légales</h1>
-                            <div className="w-25 mx-auto">
-                                <hr className="border border-primary border-3 opacity-100" />
-                            </div>
-                        </Container>
+                <h1 className='text-uppercase'>Mentions Légales</h1>
+                <div className="w-25 mx-auto">
+                    <hr className="border border-primary border-3 opacity-100" />
+                </div>
+            </Container>
             <Container className="mt-5 mb-4">
                 <Accordion>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>
-                                Éditeur de site
+                            Éditeur de site
                         </Accordion.Header>
                         <Accordion.Body>
                             <h2>John Doe</h2>
@@ -37,7 +37,7 @@ function MentionsLegales() {
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
                         <Accordion.Header>
-                                Hébergeur
+                            Hébergeur
                         </Accordion.Header>
                         <Accordion.Body>
                             <h2>Always Data</h2>
@@ -53,7 +53,7 @@ function MentionsLegales() {
                     </Accordion.Item>
                     <Accordion.Item eventKey="2">
                         <Accordion.Header>
-                                Crédits
+                            Crédits
                         </Accordion.Header>
                         <Accordion.Body>
                             <h2>Crédits</h2>

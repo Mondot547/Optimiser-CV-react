@@ -1,0 +1,24 @@
+#bg-img-home {
+    background: url(../hero-bg.jpg) 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+
+@media (max-width: 425px) {
+    #header-image {
+        background: url(../hero-bg-mobile.jpg) no-repeat;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768) {
+    #header-image {
+        background: url(../hero-bg-tablette.jpg) no-repeat;
+    }
+}
+
+@media (min-width: 769) {
+    #header-image {
+        background: url(../hero-bg.jpg);
+    }
+}

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 function Header() {
     return (
         <div className="navbar-container">
-            <Navbar bg="dark" variant="dark" expand="lg" className="px-lg-5 px-2">
+            <Navbar bg="dark" variant="dark" expand="lg" className="px-5">
                 <Navbar.Brand as="div">
                     <NavLink as={Link} to='/' className="navbar-brand text-uppercase">
                         John Doe
@@ -20,6 +20,7 @@ function Header() {
                         <NavLink as={Link} to="/" className="nav-link text-uppercase">Accueil</NavLink>
                         <NavLink as={Link} to="/services" className="nav-link text-uppercase">Services</NavLink>
                         <NavLink as={Link} to="/projects" className="nav-link text-uppercase">Réalisations</NavLink>
+                        <NavLink as={Link} to="/blog" className="nav-link text-uppercase">Blog</NavLink>
                         <NavLink as={Link} to="/contact" className="nav-link text-uppercase">Me contacter</NavLink>
                     </Nav>
                 </Navbar.Collapse>

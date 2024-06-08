@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import Realisation from './pages/Realisation'
 import Contact from './pages/Contact'
 
-import About from './pages/About'
+import Blog from './pages/Blog'
 import Services from './pages/Services'
 import MentionsLegales from './pages/MentionsLegales'
 
@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Services />} />
         <Route path='/projects' element={<Realisation />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/mentionsLegales' element={<MentionsLegales />} />
       </Routes>

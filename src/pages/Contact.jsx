@@ -17,8 +17,8 @@ Leaflet.Icon.Default.mergeOptions({
     shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png'
 });
 
+const Contact = () => {
 
-function Contact() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -52,16 +52,16 @@ function Contact() {
     return (
         <>
             <Header />
-            <section className='bg-img-contact'>
+            <div className='bg-img-contact'>
                 <Col sm={11} className='mx-auto px-3 py-5'>
-                    <section className='p-lg-5 p-sm-3 mx-auto rounded container-info-contact py-5'>
-                        <Container className='text-center'>
+                    <Container className='p-lg-5 p-sm-3 mx-auto rounded container-info-contact py-5'>
+                        <div className='text-center'>
                             <h1 className='text-uppercase'>Me contacter</h1>
                             <span>Pour me contacter en vue d&apos;un entretien ou d&apos;une future collaboration, merci de remplir le formulaire de contact</span>
                             <div className="w-25 mx-auto">
                                 <hr className="border border-primary border-3 opacity-100" />
                             </div>
-                        </Container>
+                        </div>
                         <Container>
                             <Row className="justify-content-md-center">
                                 <Col sm={12} lg={6}>
@@ -156,13 +156,12 @@ function Contact() {
                                 </Col>
                             </Row>
                         </Container>
-                    </section>
+                    </Container>
                 </Col>
-            </section>
+            </div>
             <Footer />
         </>
+    );
+};
 
-    )
-}
-
-export default Contact
+export default Contact;

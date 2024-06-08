@@ -1,27 +1,31 @@
+import bienEtre from '../assets/portfolio/espace-bien-etre.jpg';
+import fresFood from '../assets/portfolio/fresh-food.jpg';
+import restaurant from '../assets/portfolio/restaurant-japonais.jpg';
+
 const projectsData = [
     {
         id: 1,
-        title: "Projet 1",
-        description: "Description du projet 1",
-        imageUrl: "",
+        title: "Espace bien-être",
+        description: "Réalisation d'un site vitrine pour un praticien de bien-être.",
+        imageUrl: bienEtre,
         link: "",
-        techno: "HTML & CSS"
+        techno: "Site réalisé en HTML/CSS"
     },
     {
         id: 2,
-        title: "Projet 2",
-        description: "Description du projet 2",
-        imageUrl: "",
+        title: "Fress Food",
+        description: "Réalisation d'un site avec commande en ligne",
+        imageUrl: fresFood,
         link: "",
-        techno: "HTML & CSS"
+        techno: "Site réalisé avec PHP et MySQL"
     },
     {
         id: 3,
-        title: "Projet 3",
-        description: "Description du projet 3",
-        imageUrl: "",
+        title: "Restaurant Japonais",
+        description: "Réalisation d'un site vitrine",
+        imageUrl: restaurant,
         link: "",
-        techno: "HTML & CSS"
+        techno: "Site réalisé avec WordPress"
     },
 ]
 
