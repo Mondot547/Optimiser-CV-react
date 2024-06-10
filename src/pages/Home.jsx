@@ -10,8 +10,8 @@ const Home = () => {
             <Header />
             <div id='bg-img-home' className='d-flex'>
                 <Col className='d-flex justify-content-center align-items-center flex-column gap-3 text-white'>
-                    <h1>Bonjour, je suis John Doe</h1>
-                    <h2>Développeur web full stack</h2>
+                    <span className='fs-1'>Bonjour, je suis John Doe</span>
+                    <h1 className='fs-3 title-home'>Développeur web full stack</h1>
                     <Button href='#about'>En savoir plus</Button>
                 </Col>
             </div>

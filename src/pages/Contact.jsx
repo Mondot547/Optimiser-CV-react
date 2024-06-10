@@ -1,4 +1,4 @@
-import '../assets/styles/Contact.css'
+
 import { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

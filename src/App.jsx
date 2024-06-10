@@ -1,9 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
-import './App.css'
 import Home from './pages/Home'
 import Realisation from './pages/Realisation'
 import Contact from './pages/Contact'
-
+import './assets/styles/main.css'
 import Blog from './pages/Blog'
 import Services from './pages/Services'
 import MentionsLegales from './pages/MentionsLegales'

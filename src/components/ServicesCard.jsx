@@ -24,7 +24,7 @@ const ServiceCard = ({ service }) => {
         <Card.Body>
           {renderIcon()}
           <Card.Title className='text-uppercase'>{title}</Card.Title>
-          <Card.Text>{description}</Card.Text>
+          <Card.Text dangerouslySetInnerHTML={{ __html: description }}></Card.Text>
         </Card.Body>
       </Card>
     </Col>
