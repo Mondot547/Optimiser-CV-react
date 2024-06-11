@@ -38,6 +38,13 @@ strong {
     color: var(--strong-color);
 }
 
+/*Header*/
+
+.nav-link.active-link,
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 /*HOME*/
 #bg-img-home {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../hero-bg.jpg) 50% no-repeat;
