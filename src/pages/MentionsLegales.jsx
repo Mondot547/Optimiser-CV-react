@@ -31,8 +31,8 @@ const MentionsLegales = () => {
                                     69009 Lyon, France
                                 </address>
                             </div>
-                            <FontAwesomeIcon icon={faMobileScreenButton} /> <a className="text-decoration-none text-primary" href="tel:+33620304050">0620304050</a> <br />
-                            <FontAwesomeIcon icon={faEnvelope} /> <a className="text-primary font-weight-bold" href="mailto:john.doe@gmail.com">john.doe@gmail.com</a>
+                            <FontAwesomeIcon icon={faMobileScreenButton} /> <a className="text-decoration-none text-primary" rel="noopener noreferrer nofollow" href="tel:+33620304050">0620304050</a> <br />
+                            <FontAwesomeIcon icon={faEnvelope} /> <a className="text-primary font-weight-bold" rel="noopener noreferrer nofollow" href="mailto:john.doe@gmail.com">john.doe@gmail.com</a>
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
@@ -47,7 +47,7 @@ const MentionsLegales = () => {
                             </address>
                             <Col className="d-flex flex-row align-items-center">
                                 <FontAwesomeIcon icon={faGlobe} size="xs" />
-                                <a href="http://" target="_blank" rel="noopener noreferrer" className="text-decoration-none mx-2">www.alwaysdata.com</a>
+                                <a href="https://www.alwaysdata.com/fr/" target="_blank" rel="noopener noreferrer nofollow" className="text-decoration-none mx-2">www.alwaysdata.com</a>
                             </Col>
                         </Accordion.Body>
                     </Accordion.Item>
@@ -58,7 +58,7 @@ const MentionsLegales = () => {
                         <Accordion.Body>
                             <h2>Crédits</h2>
                             <p>Site développé par John Doe, étudiant du CEF.</p>
-                            <p>Les images libres de droit dont issues du site <a href="https://pixabay.com/fr/" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-primary"><strong>Pixabay</strong></a></p>
+                            <p>Les images libres de droit dont issues du site <a href="https://pixabay.com/fr/" target="_blank" rel="noopener noreferrer nofollow" className="text-decoration-none text-primary"><strong>Pixabay</strong></a></p>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>

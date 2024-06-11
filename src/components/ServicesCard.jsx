@@ -1,6 +1,7 @@
 import { Card, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDisplay, faFileCode, faMagnifyingGlassDollar } from '@fortawesome/free-solid-svg-icons';
+import '../data/servicesData'
 
 const ServiceCard = ({ service }) => {
   const { title, description, icon } = service;

@@ -12,7 +12,7 @@ const Home = () => {
                 <Col className='d-flex justify-content-center align-items-center flex-column gap-3 text-white'>
                     <span className='fs-1'>Bonjour, je suis John Doe</span>
                     <h1 className='fs-3 title-home'>Développeur web full stack</h1>
-                    <Button href='#about'>En savoir plus</Button>
+                    <Button href='#about' rel="noopener noreferrer">En savoir plus</Button>
                 </Col>
             </div>
             <Container id='about' className='my-5 rounded shadow w-100'>

@@ -8,7 +8,6 @@ const projectsData = [
         title: "Espace bien-être",
         description: "Réalisation d'un site vitrine pour un praticien de bien-être.",
         imageUrl: bienEtre,
-        link: "",
         techno: "Site réalisé en HTML/CSS"
     },
     {
@@ -16,7 +15,6 @@ const projectsData = [
         title: "Fress Food",
         description: "Réalisation d'un site avec commande en ligne",
         imageUrl: fresFood,
-        link: "",
         techno: "Site réalisé avec PHP et MySQL"
     },
     {
@@ -24,7 +22,6 @@ const projectsData = [
         title: "Restaurant Japonais",
         description: "Réalisation d'un site vitrine",
         imageUrl: restaurant,
-        link: "",
         techno: "Site réalisé avec WordPress"
     },
 ]
