@@ -91,6 +91,11 @@ strong {
     width: 100%;
 }
 
+/*SERVICES*/
+.text-custom {
+    color: #cde1f8;
+}
+
 /*REALISATION */
 div.bg-img-realisation {
     background: url(../banner.jpg) 50% no-repeat;

@@ -4,10 +4,15 @@ import ServiceCard from '../components/ServicesCard';
 import servicesData from '../data/servicesData';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 const Services = () => {
     return (
         <>
+            <Helmet>
+                <title>Services | Mon Portfolio</title>
+                <meta name="description" content="Découvrez les services que je propose, notamment le développement web, la conception graphique, et plus encore." />
+            </Helmet>
             <Header />
             <div className="bg-img-realisation"></div>
             <Container className='text-center my-5'>

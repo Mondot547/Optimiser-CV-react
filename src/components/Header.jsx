@@ -14,11 +14,11 @@ function Header() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="ml-auto">
-                        <NavLink exact to="/" activeClassName="active-link" className="nav-link text-uppercase">Accueil</NavLink>
-                        <NavLink to="/services" activeClassName="active-link" className="nav-link text-uppercase">Services</NavLink>
-                        <NavLink to="/projects" activeClassName="active-link" className="nav-link text-uppercase">Réalisations</NavLink>
-                        <NavLink to="/blog" activeClassName="active-link" className="nav-link text-uppercase">Blog</NavLink>
-                        <NavLink to="/contact" activeClassName="active-link" className="nav-link text-uppercase">Me contacter</NavLink>
+                        <NavLink to="/" className="active-link nav-link text-uppercase">Accueil</NavLink>
+                        <NavLink to="/services" className="active-link nav-link text-uppercase">Services</NavLink>
+                        <NavLink to="/projects" className="active-link nav-link text-uppercase">Réalisations</NavLink>
+                        <NavLink to="/blog" className="active-link nav-link text-uppercase">Blog</NavLink>
+                        <NavLink to="/contact" className="active-link nav-link text-uppercase">Me contacter</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

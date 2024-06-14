@@ -7,6 +7,7 @@ import 'leaflet/dist/leaflet.css'
 import Leaflet from 'leaflet'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 
 delete Leaflet.Icon.Default.prototype._getIconUrl;
@@ -51,6 +52,10 @@ const Contact = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Contactez-moi | Mon Portfolio</title>
+                <meta name="description" content="Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact." />
+            </Helmet>
             <Header />
             <div className='bg-img-contact'>
                 <Col sm={11} className='mx-auto px-3 py-5'>
@@ -149,7 +154,6 @@ const Contact = () => {
                                             height="360"
                                             className='mt-3'
                                             allowFullScreen
-                                            referrerPolicy="no-referrer-when-downgrade"
                                             title='Google Maps'
                                         ></iframe>
                                     </Container>

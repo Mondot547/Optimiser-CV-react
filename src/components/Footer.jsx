@@ -7,9 +7,10 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 
 
+
 function Footer() {
 
-
+    
 
     return (
         <>
@@ -50,7 +51,7 @@ function Footer() {
                         <h5>Mes dernières réalisations</h5>
                         <ul className="list-unstyled">
                             <li><a href="#"
-                            target="_blank" rel="noopener noreferrer nofollow" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Fresh food</a></li>
+                                target="_blank" rel="noopener noreferrer nofollow" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Fresh food</a></li>
                             <li><a href="#" target="_blank" rel="noopener noreferrer nofollow" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Restaurant Akira</a></li>
                             <li><a href="#" target="_blank" rel="noopener noreferrer nofollow" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Espace bien-être</a></li>
                         </ul>
@@ -69,7 +70,6 @@ function Footer() {
                         <p className="mb-0 text-white">&copy; Designed by John Doe</p>
                     </Col>
                 </Row>
-
             </footer>
 
         </>

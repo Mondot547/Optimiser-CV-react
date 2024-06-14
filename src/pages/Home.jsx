@@ -3,10 +3,15 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../assets/styles/main.css'
 import imgAbout from '../assets/john-doe-about.jpg'
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
     return (
         <>
+            <Helmet>
+                <title>Accueil | Mon Portfolio</title>
+                <meta name="description" content="Bienvenue sur mon portfolio. Découvrez mes projets et compétences." />
+            </Helmet>
             <Header />
             <div id='bg-img-home' className='d-flex'>
                 <Col className='d-flex justify-content-center align-items-center flex-column gap-3 text-white'>
