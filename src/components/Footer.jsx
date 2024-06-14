@@ -4,13 +4,31 @@ import { faGithub, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { Link } from "react-router-dom";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 
 
 
 function Footer() {
 
-    
+    useEffect(() => {
+        const footerCopyright = document.getElementById("footer-copyright");
+
+        const handleScroll = () => {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                footerCopyright.style.display = "block"; // Assurez-vous qu'il est visible avant d'ajouter la classe
+                footerCopyright.classList.add("show");
+            } else {
+                footerCopyright.classList.remove("show");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <>
@@ -66,8 +84,8 @@ function Footer() {
                     </Col>
                 </Row>
                 <Row className="mt-3 mx-auto text-center w-100">
-                    <Col className="bg-dark py-3">
-                        <p className="mb-0 text-white">&copy; Designed by John Doe</p>
+                    <Col id="footer-copyright" className="bg-dark py-3">
+                        <a href="#top" className="mb-0 text-white text-decoration-none">&copy; Designed by John Doe</a>
                     </Col>
                 </Row>
             </footer>

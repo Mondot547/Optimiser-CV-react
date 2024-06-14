@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../assets/styles/main.css'
 import imgAbout from '../assets/john-doe-about.jpg'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 const Home = () => {
     return (

@@ -3,7 +3,7 @@ import projectsData from '../data/projectsData';
 import { Container, Row, Col } from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 
 const Realisation = () => {
@@ -14,7 +14,7 @@ const Realisation = () => {
                 <meta name="description" content="Découvrez mes réalisations et projets antérieurs. Je partage ici des exemples de mon travail en développement web, conception graphique, et plus encore." />
             </Helmet>
             <Header />
-            <div className="bg-img-realisation"></div>
+            <div className="banner-img"></div>
             <Container className='text-center mt-5'>
                 <h1 className='text-uppercase'>Portfolio</h1>
                 <span>Voici quelques-unes de mes réalisations.</span>

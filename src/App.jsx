@@ -7,6 +7,7 @@ import Blog from './pages/Blog';
 import Services from './pages/Services';
 import MentionsLegales from './pages/MentionsLegales';
 import GitHubProfile from './components/GithubProfil';
+import { HelmetProvider } from 'react-helmet-async';
 
 
 function App() {
@@ -14,15 +15,17 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/projects' element={<Realisation />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/mentionsLegales' element={<MentionsLegales />} />
-        <Route path='/githubProfile' element={<GitHubProfile />} />
-      </Routes>
+      <HelmetProvider>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/projects' element={<Realisation />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/mentionsLegales' element={<MentionsLegales />} />
+          <Route path='/githubProfile' element={<GitHubProfile />} />
+        </Routes>
+      </HelmetProvider>
     </>
   )
 }

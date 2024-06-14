@@ -7,7 +7,7 @@ import 'leaflet/dist/leaflet.css'
 import Leaflet from 'leaflet'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 
 delete Leaflet.Icon.Default.prototype._getIconUrl;

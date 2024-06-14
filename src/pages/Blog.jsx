@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Article from "../components/ArticleBlog";
 import articleData from "../data/articleData";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
     return (
@@ -13,7 +13,7 @@ const Blog = () => {
                 <meta name="description" content="Lisez mes articles de blog sur le développement web, la conception graphique, et d'autres sujets intéressants. Suivez mes mises à jour et découvrez mes expériences." />
             </Helmet>
             <Header />
-            <div className="bg-img-realisation"></div>
+            <div className="banner-img"></div>
             <Container className='text-center mt-5'>
                 <h1 className='text-uppercase'>Blog</h1>
                 <span>Retrouver ici quelques articles sur le développement web.</span>

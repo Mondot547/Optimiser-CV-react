@@ -4,7 +4,7 @@ import ServiceCard from '../components/ServicesCard';
 import servicesData from '../data/servicesData';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Services = () => {
     return (
@@ -14,7 +14,7 @@ const Services = () => {
                 <meta name="description" content="Découvrez les services que je propose, notamment le développement web, la conception graphique, et plus encore." />
             </Helmet>
             <Header />
-            <div className="bg-img-realisation"></div>
+            <div className="banner-img"></div>
             <Container className='text-center my-5'>
                 <h1 className='text-uppercase'>Mon offre de Services</h1>
                 <span>Voici les prestations sur lesquelles je peux intervenir.</span>
