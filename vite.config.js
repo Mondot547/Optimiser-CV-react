@@ -4,12 +4,17 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    sourcemap: true,
     rollupOptions: {
-      external: ['@fortawesome/fontawesome-svg-core', 'leaflet'],
+      output: {
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
+      },
     },
   },
-  server: {
-    sourcemap: false,
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
   },
 });
