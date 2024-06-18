@@ -126,6 +126,8 @@ strong {
     color: var(--text-custom);
 }
 
+
+
 .banner-img {
     background: url(../banner.jpg) no-repeat;
     width: 100%;
@@ -166,6 +168,16 @@ strong {
         background: url(../banner.jpg) no-repeat;
         background-size: cover;
         height: 200px;
+    }
+
+    .title-services {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .title-services {
+        font-size: 2.5rem;
     }
 }
 
