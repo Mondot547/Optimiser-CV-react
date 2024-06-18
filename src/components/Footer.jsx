@@ -11,6 +11,10 @@ import { useEffect } from "react";
 
 function Footer() {
 
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+    }
+
     useEffect(() => {
         const footerCopyright = document.getElementById("footer-copyright");
 
@@ -58,11 +62,15 @@ function Footer() {
                     <Col md={6} lg={3} className="mx-auto px-lg-3 px-xl-5">
                         <h5>Liens utiles</h5>
                         <Nav className="col-12 flex-column">
-                            <NavLink as={Link} to="/" rel="noopener noreferrer" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Accueil</NavLink>
-                            <NavLink as={Link} to="/services" rel="noopener noreferrer" className="nav-link p-0 text-dark text-primary-hover"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Services</NavLink>
-                            <NavLink as={Link} to="/projects" rel="noopener noreferrer" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Réalisations</NavLink>
-                            <NavLink as={Link} to="/contact" rel="noopener noreferrer" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Me contacter</NavLink>
-                            <NavLink as={Link} to="/mentionsLegales" rel="noopener noreferrer nofollow" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Mentions légales</NavLink>
+                            <NavLink as={Link} to="/" onClick={handleClick} rel="noopener noreferrer" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Accueil</NavLink>
+                            <NavLink as={Link} to="/services" onClick={handleClick} rel="noopener noreferrer" className="nav-link p-0 text-dark text-primary-hover"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Services</NavLink>
+                            <NavLink as={Link} to="/projects" onClick={handleClick} rel="noopener noreferrer" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Réalisations</NavLink>
+                            <NavLink as={Link} to="/blog" onClick={handleClick} rel="noopener noreferrer" className="nav-link p-0 text-dark">
+                                <FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />
+                                Blog
+                            </NavLink>
+                            <NavLink as={Link} to="/contact" onClick={handleClick} rel="noopener noreferrer" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Me contacter</NavLink>
+                            <NavLink as={Link} to="/mentionsLegales" onClick={handleClick} rel="noopener noreferrer nofollow" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Mentions légales</NavLink>
                         </Nav>
                     </Col>
                     <Col md={6} lg={3} className="mx-auto px-md-5 mt-md-3 mt-lg-0 px-lg-0 px-xl-5">

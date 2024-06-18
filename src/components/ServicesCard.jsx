@@ -6,7 +6,7 @@ import React, { useState } from 'react'; // Importez useState
 
 const ServiceCard = ({ service }) => {
   const { title, description, icon } = service;
-  const [isHovered, setIsHovered] = useState(false); // Ajoutez un état pour suivre le survol
+  const [isHovered, setIsHovered] = useState(false); //état pour suivre le survol
 
   const renderIcon = () => {
     let iconComponent = null;
@@ -33,8 +33,8 @@ const ServiceCard = ({ service }) => {
     <Col md={4} className="mb-4">
       <Card
         className="h-100 text-center py-5 border-0 bg-light"
-        onMouseEnter={() => setIsHovered(true)} // Met à jour l'état lorsque survolé
-        onMouseLeave={() => setIsHovered(false)} // Met à jour l'état lorsque le survol est terminé
+        onMouseEnter={() => setIsHovered(true)} //survolé
+        onMouseLeave={() => setIsHovered(false)} //survol est terminé
       >
         <Card.Body>
           {renderIcon()}
