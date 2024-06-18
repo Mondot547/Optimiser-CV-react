@@ -4,15 +4,25 @@ import axios from 'axios';
 
 const GitHubProfil = () => {
     const [profile, setProfile] = useState(null);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         axios.get('https://api.github.com/users/github-john-doe')
-            .then(response => setProfile(response.data))
-            .catch(error => console.error('Error fetching the GitHub profile:', error));
+            .then(response => {
+                setProfile(response.data);
+            })
+            .catch(error => {
+                console.error('Error fetching the GitHub profile:', error);
+                setError(error.message);
+            });
     }, []);
 
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
+
     if (!profile) {
-        return <div>Loading...</div>;
+        return <div className='m-auto'>Loading...</div>;
     }
 
     return (
