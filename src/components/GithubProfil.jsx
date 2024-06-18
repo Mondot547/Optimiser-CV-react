@@ -1,15 +1,20 @@
 import { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import axios from 'axios';
 
 const GitHubProfil = () => {
     const [profile, setProfile] = useState(null);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('https://api.github.com/users/github-john-doe')
+        fetch('https://api.github.com/users/github-john-doe')
             .then(response => {
-                setProfile(response.data);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                setProfile(data);
             })
             .catch(error => {
                 console.error('Error fetching the GitHub profile:', error);
@@ -22,7 +27,7 @@ const GitHubProfil = () => {
     }
 
     if (!profile) {
-        return <div className='m-auto'>Loading...</div>;
+        return <div>Loading...</div>;
     }
 
     return (
