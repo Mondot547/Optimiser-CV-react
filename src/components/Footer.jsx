@@ -12,8 +12,11 @@ import { useEffect } from "react";
 function Footer() {
 
     const handleClick = () => {
-        window.scrollTo(0, 0);
-    }
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
 
     useEffect(() => {
         const footerCopyright = document.getElementById("footer-copyright");
@@ -93,7 +96,7 @@ function Footer() {
                 </Row>
                 <Row className="mt-3 mx-auto text-center w-100">
                     <Col id="footer-copyright" className="bg-dark py-3">
-                        <a href="#top" className="mb-0 text-white text-decoration-none">&copy; Designed by John Doe</a>
+                        <small onClick={handleClick} className="mb-0 footer-copyright">&copy; Designed by John Doe</small>
                     </Col>
                 </Row>
             </footer>

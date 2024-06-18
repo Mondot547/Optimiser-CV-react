@@ -6,6 +6,14 @@ import imgAbout from '../assets/john-doe-about.jpg'
 import { Helmet } from 'react-helmet-async'
 
 const Home = () => {
+
+    const handleClick = () => {
+        window.scrollTo({
+            top: 550,
+            behavior: 'smooth',
+        });
+    };
+
     return (
         <>
             <Helmet>
@@ -17,7 +25,7 @@ const Home = () => {
                 <Col className='d-flex justify-content-center align-items-center flex-column gap-3 text-white'>
                     <span className='fs-1'>Bonjour, je suis John Doe</span>
                     <h1 className='fs-3 title-home'>Développeur web full stack</h1>
-                    <Button href='#about' rel="noopener noreferrer">En savoir plus</Button>
+                    <Button onClick={handleClick}>En savoir plus</Button>
                 </Col>
             </div>
             <Container id='about' className='my-5 rounded shadow w-100'>
