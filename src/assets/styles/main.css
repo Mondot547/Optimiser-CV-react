@@ -168,3 +168,10 @@ strong {
         height: 200px;
     }
 }
+
+/*github user*/
+
+.img-fluid {
+    width: 150px;
+    height: 150px;
+}

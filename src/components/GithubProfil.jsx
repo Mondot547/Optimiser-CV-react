@@ -19,7 +19,7 @@ const GitHubProfile = () => {
         <Container className="text-center mt-5">
             <h1>Github user</h1>
             <h2>{profile.name}</h2>
-            <img src={profile.avatar_url} alt={`${profile.name}'s avatar`} className="img-fluid rounded-circle my-4" style={{ width: '150px', height: '150px' }} />
+            <img src={profile.avatar_url} alt={`${profile.name}'s avatar`} className="img-fluid rounded-circle my-4" />
             <p>{profile.bio}</p>
             <p>Abonnés : {profile.followers}</p>
             <p>Abonnements : {profile.following}</p>
