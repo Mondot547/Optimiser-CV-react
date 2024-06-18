@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import axios from 'axios';
 
-const GitHubProfile = () => {
+const GitHubProfil = () => {
     const [profile, setProfile] = useState(null);
 
     useEffect(() => {
@@ -30,4 +30,4 @@ const GitHubProfile = () => {
     );
 };
 
-export default GitHubProfile;
+export default GitHubProfil;

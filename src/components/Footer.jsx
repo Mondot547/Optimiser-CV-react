@@ -50,7 +50,7 @@ function Footer() {
                         <p className="m-0">Téléphone : <a href="tel:+620304050" rel="noopener noreferrer nofollow" className="text-decoration-none text-dark">06 20 30 40 50</a></p>
                         <Row className="mt-2 mx-0">
                             <Col>
-                                <a href="/githubProfile" target="_blank" rel="noopener noreferrer nofollow" className="text-dark me-3">
+                                <a href="/githubProfil" target="_blank" rel="noopener noreferrer nofollow" className="text-dark me-3">
                                     <FontAwesomeIcon icon={faGithub} size="xl" />
                                 </a>
                                 <a href="#" target="_blank" rel="noopener noreferrer nofollow" className="text-dark me-3">

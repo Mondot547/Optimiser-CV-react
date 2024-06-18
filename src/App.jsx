@@ -6,7 +6,7 @@ import './assets/styles/main.css';
 import Blog from './pages/Blog';
 import Services from './pages/Services';
 import MentionsLegales from './pages/MentionsLegales';
-import GitHubProfile from './components/GithubProfil';
+import GitHubProfil from './components/GithubProfil';
 import { HelmetProvider } from 'react-helmet-async';
 
 
@@ -23,7 +23,7 @@ function App() {
           <Route path='/blog' element={<Blog />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/mentionsLegales' element={<MentionsLegales />} />
-          <Route path='/githubProfile' element={<GitHubProfile />} />
+          <Route path='/githubProfil' element={<GitHubProfil />} />
         </Routes>
       </HelmetProvider>
     </>
