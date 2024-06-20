@@ -50,7 +50,7 @@ function Footer() {
                         <p className="m-0">Téléphone : <a href="tel:+620304050" rel="noopener noreferrer nofollow" className="text-decoration-none text-dark">06 20 30 40 50</a></p>
                         <Row className="mt-2 mx-0">
                             <Col>
-                                <a href="/githubProfil" target="_blank" rel="noopener noreferrer nofollow" className="text-dark me-3">
+                                <a href="/github-profil" target="_blank" rel="noopener noreferrer nofollow" className="text-dark me-3">
                                     <FontAwesomeIcon icon={faGithub} size="xl" />
                                 </a>
                                 <a href="#" target="_blank" rel="noopener noreferrer nofollow" className="text-dark me-3">
@@ -73,7 +73,7 @@ function Footer() {
                                 Blog
                             </NavLink>
                             <NavLink as={Link} to="/contact" onClick={handleClick} rel="noopener noreferrer" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Me contacter</NavLink>
-                            <NavLink as={Link} to="/mentionsLegales" onClick={handleClick} rel="noopener noreferrer nofollow" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Mentions légales</NavLink>
+                            <NavLink as={Link} to="/mentions-legales" onClick={handleClick} rel="noopener noreferrer nofollow" className="nav-link p-0 text-dark"><FontAwesomeIcon icon={faChevronRight} size="xs" className="mx-1 text-primary" />Mentions légales</NavLink>
                         </Nav>
                     </Col>
                     <Col md={6} lg={3} className="mx-auto px-md-5 mt-md-3 mt-lg-0 px-lg-0 px-xl-5">

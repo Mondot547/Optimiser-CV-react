@@ -31,16 +31,15 @@ const GitHubProfil = () => {
     }
 
     return (
-        <Container className="text-center mt-5">
-            <h1>Github user</h1>
-            <h2>{profile.name}</h2>
-            <img src={profile.avatar_url} alt={`${profile.name}'s avatar`} className="img-fluid rounded-circle my-4" />
+        <Container>
+            <h1>Github user {profile.name}</h1>
+            <p>{profile.name}</p>
             <p>{profile.bio}</p>
             <p>Abonnés : {profile.followers}</p>
             <p>Abonnements : {profile.following}</p>
             <p>Créé le : {new Date(profile.created_at).toLocaleString()}</p>
             <p>Modifié le : {new Date(profile.updated_at).toLocaleString()}</p>
-            <p>URL repositories : <a href={profile.repos_url} target="_blank" rel="noopener noreferrer nofollow">{profile.repos_url}</a></p>
+            <p>URL repositories : {profile.repos_url}</p>
         </Container>
     );
 };
