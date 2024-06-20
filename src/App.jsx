@@ -6,7 +6,7 @@ import './assets/styles/main.css';
 import Blog from './pages/Blog';
 import Services from './pages/Services';
 import MentionsLegales from './pages/MentionsLegales';
-import GitHubProfil from './components/GithubProfil';
+import GitHubProfil from './pages/GithubProfil';
 import { HelmetProvider } from 'react-helmet-async';
 
 
