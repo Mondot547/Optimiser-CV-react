@@ -31,9 +31,9 @@ const GitHubProfil = () => {
     }
 
     return (
-        <Container>
-            <h1>Github user {profile.name}</h1>
-            <p>{profile.name}</p>
+        <Container className='text-center'>
+            <h1>{profile.name}</h1>
+            <img className='w-25 rounded-circle' src={profile.avatar_url} alt="Image de profile de l'utililisateur" />
             <p>{profile.bio}</p>
             <p>Abonnés : {profile.followers}</p>
             <p>Abonnements : {profile.following}</p>

@@ -1,32 +1,64 @@
+import { useState, useCallback } from 'react';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
+// Définir les bibliothèques de manière statique
+const libraries = ['places'];
 
-delete L.Icon.Default.prototype._getIconUrl;
+const containerStyle = {
+    width: '100%',
+    height: '385px'
+};
 
-L.Icon.Default.mergeOptions({
-    iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-});
+const center = {
+    lat: 45.77866571252193,
+    lng: 4.796409341077399
+};
+
+const position = { lat: 45.77866571252193, lng: 4.796409341077399 };
 
 const MapComponent = () => {
-    const position = [45.77866571252193, 4.796409341077399];
+    const { isLoaded } = useJsApiLoader({
+        id: 'google-map-script',
+        googleMapsApiKey: 'AIzaSyBGxzNk2p2jA8vJue8iQ9431n1RnvC4Ef0',
+        libraries: libraries,
+    });
 
-    return (
-        <MapContainer center={position} zoom={13} className='my-lg-3 map-contact'>
-            <TileLayer
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            />
-            <Marker position={position}>
-                <Popup>
-                    40 Rue Laure Diebold, 69009 Lyon, France
-                </Popup>
-            </Marker>
-        </MapContainer>
-    );
+    const [map, setMap] = useState(null);
+
+    const onLoad = useCallback((mapInstance) => {
+        const marker = new window.google.maps.Marker({
+            map: mapInstance,
+            position: position,
+            title: '40 Rue Laure Diebold, 69009 Lyon, France',
+        });
+
+        const infoWindow = new window.google.maps.InfoWindow({
+            content: '40 Rue Laure Diebold, 69009 Lyon, France',
+        });
+
+        marker.addListener('click', () => {
+            infoWindow.open({
+                anchor: marker,
+                map: mapInstance,
+            });
+        });
+
+        setMap(mapInstance);
+    }, []);
+
+    const onUnmount = useCallback(() => {
+        setMap(null);
+    }, []);
+
+    return isLoaded ? (
+        <GoogleMap
+            mapContainerStyle={containerStyle}
+            center={center}
+            zoom={13}
+            onLoad={onLoad}
+            onUnmount={onUnmount}
+        />
+    ) : <div>Loading...</div>;
 };
 
 export default MapComponent;
