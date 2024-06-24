@@ -84,13 +84,13 @@ strong {
     }
 }
 
-@media (min-width: 426px) and (max-width: 768) {
+@media (min-width: 426px) and (max-width: 768px) {
     #header-image {
         background: url(../hero-bg-tablette.jpg) no-repeat;
     }
 }
 
-@media (min-width: 769) {
+@media (min-width: 769px) {
     #header-image {
         background: url(../hero-bg.jpg);
     }
