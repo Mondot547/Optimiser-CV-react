@@ -8,7 +8,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 #cloner le projet et faire un: npm install
-puis
+
 #commande pour lancer le projet: npm run dev
 
-j'ai utiliser React.js, React-Bootstrap et CSS pour ce projet
+J'ai utiliser React.js, React-Bootstrap et CSS pour ce projet
+
+Les fichiers W3C html et css sont dans le dossier 'src/assets/W3C-validator-opt-cv-react'.
